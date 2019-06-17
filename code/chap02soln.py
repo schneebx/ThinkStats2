@@ -60,7 +60,7 @@ def WeightDifference(live, firsts, others):
     print('Difference in lbs', mean1 - mean2)
     print('Difference in oz', (mean1 - mean2) * 16)
 
-    print('Difference relative to mean (%age points)', 
+    print('Difference relative to mean (%age points)',
           (mean1 - mean2) / mean0 * 100)
 
     d = thinkstats2.CohenEffectSize(firsts.totalwgt_lb, others.totalwgt_lb)
@@ -78,7 +78,7 @@ def main(script):
     # explore the weight difference between first babies and others
     WeightDifference(live, firsts, others)
 
-    # test Mode    
+    # test Mode
     mode = Mode(hist)
     print('Mode of preg length', mode)
     assert(mode == 39)
